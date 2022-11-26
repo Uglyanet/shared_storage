@@ -9,6 +9,9 @@
     "files": [
         "dist"
     ],
+    "publishConfig": {
+        "@Uglyanet:registry": "https://npm.pkg.github.com"
+    },
     "repository": {
         "url": "git://github.com/Uglyanet/shared_storage.git."
     },
