@@ -2,7 +2,7 @@
     "name": "@Uglyanet/shared-storage",
     "type": "module",
     "private": false,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "source": "src/index.js",
@@ -10,7 +10,7 @@
         "dist"
     ],
     "repository": {
-        "url":"git://github.com/Uglyanet/shared_storage.git."
+        "url": "git://github.com/Uglyanet/shared_storage.git."
     },
     "scripts": {
         "build": "npx rollup -c"
