@@ -238,7 +238,7 @@ var NetworkManager = /*#__PURE__*/function () {
   return NetworkManager;
 }();
 
-var createStore$1 = function createStore(reducer, executors) {
+var createStore = function createStore(reducer, executors) {
   var state;
   var listeners = [];
   var tabManager = new TabManager();
@@ -295,7 +295,7 @@ var ReduxContext = /*#__PURE__*/React.createContext("redux");
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var connect$1 = function connect(mapStateToProps, mapDispatchToProps) {
+var connect = function connect(mapStateToProps, mapDispatchToProps) {
   return function (Component) {
     var Connect = /*#__PURE__*/function (_React$Component) {
       _inherits(Connect, _React$Component);
@@ -334,7 +334,7 @@ var connect$1 = function connect(mapStateToProps, mapDispatchToProps) {
   };
 };
 
-var combineReducers$1 = function combineReducers(reducers) {
+var combineReducers = function combineReducers(reducers) {
   var nextState = {};
   var reducerFunctions = {};
   var reducersKeys = Object.keys(reducers);
@@ -355,10 +355,4 @@ var combineReducers$1 = function combineReducers(reducers) {
   };
 };
 
-var index = {
-  createStore: createStore,
-  connect: connect,
-  combineReducers: combineReducers
-};
-
-export { combineReducers$1 as combineReducers, connect$1 as connect, createStore$1 as createStore, index as default };
+export { combineReducers, connect, createStore };
