@@ -2,7 +2,7 @@
     "name": "@Uglyanet/shared-storage",
     "type": "module",
     "private": false,
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "source": "src/index.js",
