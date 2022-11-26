@@ -1,0 +1,37 @@
+{
+    "name": "shared-storage",
+    "type": "module",
+    "private": false,
+    "version": "1.0.0",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "source": "src/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "npx rollup -c"
+    },
+    "dependencies": {
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.1",
+        "@babel/core": "^7.12.3",
+        "@babel/plugin-transform-runtime": "^7.12.1",
+        "@babel/preset-env": "^7.12.1",
+        "@babel/preset-react": "^7.12.5",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-commonjs": "^23.0.2",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "autoprefixer": "^10.4.13",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "rollup-plugin-filesize": "^9.1.2",
+        "rollup-plugin-postcss": "^4.0.2"
+    },
+    "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0"
+    }
+}
